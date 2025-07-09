@@ -292,7 +292,7 @@ const Index = () => {
     );
   };
 
-  return (
+return (
     <div className="min-h-screen bg-gradient-to-br from-background via-secondary/10 to-background">
       {/* Floating Table of Contents */}
       <div className="fixed left-4 top-1/2 transform -translate-y-1/2 w-64 bg-card border rounded-lg shadow-lg p-4 z-40 max-h-96 overflow-y-auto hidden lg:block">
