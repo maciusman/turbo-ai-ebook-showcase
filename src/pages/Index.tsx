@@ -479,7 +479,7 @@ return (
             <p>Przyjęcie tej filozofii pozwala świadomie projektować zasoby cyfrowe, które nie tylko odpowiadają na potrzeby użytkowników, ale także stają się wysokiej jakości paliwem dla inteligentnych silników odpowiedzi, zapewniając marce centralne miejsce w nowym ekosystemie informacyjnym.</p>
           </ExpandableSection>
 
-          <ExpandableSection id="chapter7" title="Rozdział 7: Budowanie "cytadeli zaufania": treść i autorytet w erze AI" level={2}>
+          <ExpandableSection id="chapter7" title="Rozdział 7: Budowanie &quot;cytadeli zaufania&quot;: treść i autorytet w erze AI" level={2}>
             <p>W świecie, w którym sztuczna inteligencja może generować ogromne ilości treści, weryfikowalna wiedza ekspercka i autorytet (E-E-A-T) stają się najcenniejszymi aktywami biznesowymi. To one odróżniają wiarygodne źródła od szumu informacyjnego i decydują o tym, które marki zostaną zacytowane przez AI.</p>
 
             <p>Koncepcja <strong>E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness – Doświadczenie, Ekspertyza, Autorytet, Wiarygodność)</strong> ewoluuje z wytycznej dla ludzkich oceniających jakość stron w zbiór konkretnych, mierzalnych sygnałów dla algorytmów AI. Aby zbudować autorytet, który maszyny mogą zrozumieć, należy skupić się na:</p>
