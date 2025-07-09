@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, ChevronRight, Download, BarChart3, Target, Users, Zap, TrendingUp, Search, Brain, Globe, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -353,12 +352,12 @@ const Index = () => {
 
         {/* Part I */}
         <ExpandableSection id="part1" title="Część I: Nieunikniona zmiana: dlaczego dotychczasowe zasady przestały obowiązywać" level={1}>
-          <p>Ta część ustanawia fundamentalne „dlaczego". Tworzy poczucie pilności, wykazując, że rewolucja w wyszukiwaniu opartym na sztucznej inteligencji nie jest odległym trendem, lecz obecną rzeczywistością, która bezpośrednio wpływa na polski rynek.</p>
+          <p>Ta część ustanawia fundamentalne "dlaczego". Tworzy poczucie pilności, wykazując, że rewolucja w wyszukiwaniu opartym na sztucznej inteligencji nie jest odległym trendem, lecz obecną rzeczywistością, która bezpośrednio wpływa na polski rynek.</p>
           
           <ExpandableSection id="chapter1" title="Rozdział 1: Koniec wyszukiwania, początek ery odpowiedzi – i nowego wzrostu" level={2}>
-            <p>Jesteśmy świadkami jednej z najbardziej fundamentalnych transformacji w funkcjonowaniu internetu od dziesięcioleci. Era, w której sukces biznesowy w sieci definiowała obecność na liście dziesięciu niebieskich linków, bezpowrotnie ustępuje miejsca nowemu paradygmatowi. Wyszukiwarka, jaką znaliśmy, ewoluuje w inteligentny „silnik odpowiedzi" (ang. <em>answer engine</em>), napędzany przez generatywną sztuczną inteligencję. Użytkownicy – a więc i klienci – coraz rzadziej poszukują linków. Oczekują natychmiastowych, skondensowanych odpowiedzi, generowanych w czasie rzeczywistym, bezpośrednio na stronie wyników.</p>
+            <p>Jesteśmy świadkami jednej z najbardziej fundamentalnych transformacji w funkcjonowaniu internetu od dziesięcioleci. Era, w której sukces biznesowy w sieci definiowała obecność na liście dziesięciu niebieskich linków, bezpowrotnie ustępuje miejsca nowemu paradygmatowi. Wyszukiwarka, jaką znaliśmy, ewoluuje w inteligentny "silnik odpowiedzi" (ang. <em>answer engine</em>), napędzany przez generatywną sztuczną inteligencję. Użytkownicy – a więc i klienci – coraz rzadziej poszukują linków. Oczekują natychmiastowych, skondensowanych odpowiedzi, generowanych w czasie rzeczywistym, bezpośrednio na stronie wyników.</p>
 
-            <p>Pojawienie się chatbotów i wyszukiwania AI wywołało falę spekulacji o „śmierci SEO". Jednak najnowsze, twarde dane rynkowe pokazują obraz zgoła odmienny: to nie jest gra o sumie zerowej. Obserwujemy nie zastąpienie, a dynamiczny, równoległy wzrost obu ekosystemów. W ciągu ostatnich dwóch lat (kwiecień 2023 - marzec 2025) rynek chatbotów AI odnotował <strong>eksplozyjny wzrost o ponad 80%, osiągając 55,2 miliarda wizyt</strong>. Mimo to, w tym samym okresie, tradycyjne wyszukiwarki zdominowały ruch internetowy, generując <strong>1863 miliardy wizyt – czyli 34 razy więcej</strong>. Nawet lider rynku AI, ChatGPT, notuje 26 razy mniej codziennych wizyt niż Google.</p>
+            <p>Pojawienie się chatbotów i wyszukiwania AI wywołało falę spekulacji o "śmierci SEO". Jednak najnowsze, twarde dane rynkowe pokazują obraz zgoła odmienny: to nie jest gra o sumie zerowej. Obserwujemy nie zastąpienie, a dynamiczny, równoległy wzrost obu ekosystemów. W ciągu ostatnich dwóch lat (kwiecień 2023 - marzec 2025) rynek chatbotów AI odnotował <strong>eksplozyjny wzrost o ponad 80%, osiągając 55,2 miliarda wizyt</strong>. Mimo to, w tym samym okresie, tradycyjne wyszukiwarki zdominowały ruch internetowy, generując <strong>1863 miliardy wizyt – czyli 34 razy więcej</strong>. Nawet lider rynku AI, ChatGPT, notuje 26 razy mniej codziennych wizyt niż Google.</p>
 
             <InteractiveVisualization type="growth" title="Porównanie wzrostu ruchu: AI vs tradycyjne wyszukiwarki" />
 
@@ -368,9 +367,9 @@ const Index = () => {
           </ExpandableSection>
 
           <ExpandableSection id="chapter2" title="Rozdział 2: Nowa podróż klienta: od kliknięć do konwersacji" level={2}>
-            <p>Zmiana w sposobie prezentacji wyników wyszukiwania w naturalny sposób przekształca interakcje użytkowników. Obserwujemy zjawisko, które można nazwać „przesunięciem uwagi" – od nawykowego klikania w linki w kierunku konsumpcji gotowych, wygenerowanych przez AI odpowiedzi. Szacuje się, że nawet do <strong>60% wyszukiwań w Google może kończyć się bez kliknięcia w jakikolwiek tradycyjny link organiczny</strong>. Użytkownicy otrzymują skondensowaną wiedzę bezpośrednio na stronie wyników, co fundamentalnie zmienia dynamikę i cel generowania ruchu na stronach internetowych.</p>
+            <p>Zmiana w sposobie prezentacji wyników wyszukiwania w naturalny sposób przekształca interakcje użytkowników. Obserwujemy zjawisko, które można nazwać "przesunięciem uwagi" – od nawykowego klikania w linki w kierunku konsumpcji gotowych, wygenerowanych przez AI odpowiedzi. Szacuje się, że nawet do <strong>60% wyszukiwań w Google może kończyć się bez kliknięcia w jakikolwiek tradycyjny link organiczny</strong>. Użytkownicy otrzymują skondensowaną wiedzę bezpośrednio na stronie wyników, co fundamentalnie zmienia dynamikę i cel generowania ruchu na stronach internetowych.</p>
 
-            <p>Obecność AI Overviews wpływa na liczbę kliknięć w linki, szczególnie w przypadku zapytań o charakterze informacyjnym. Niektóre analizy wskazują na potencjalne spadki ruchu dla tego typu treści sięgające od 18% do nawet 64%. Taka perspektywa może budzić obawy o zmniejszenie widoczności i utratę cennego źródła leadów. Jednakże w tej nowej rzeczywistości pojawia się fascynująca szansa biznesowa. Google aktywnie promuje koncepcję <strong>„kliknięć wyższej jakości"</strong>. Użytkownik, który zapoznał się z syntetyczną odpowiedzią AI i mimo to decyduje się przejść na stronę źródłową, robi to z o wiele silniejszą intencją. Jest już wstępnie poinformowany, a jego celem jest pogłębienie wiedzy, porównanie szczegółów lub dokonanie transakcji.</p>
+            <p>Obecność AI Overviews wpływa na liczbę kliknięć w linki, szczególnie w przypadku zapytań o charakterze informacyjnym. Niektóre analizy wskazują na potencjalne spadki ruchu dla tego typu treści sięgające od 18% do nawet 64%. Taka perspektywa może budzić obawy o zmniejszenie widoczności i utratę cennego źródła leadów. Jednakże w tej nowej rzeczywistości pojawia się fascynująca szansa biznesowa. Google aktywnie promuje koncepcję <strong>"kliknięć wyższej jakości"</strong>. Użytkownik, który zapoznał się z syntetyczną odpowiedzią AI i mimo to decyduje się przejść na stronę źródłową, robi to z o wiele silniejszą intencją. Jest już wstępnie poinformowany, a jego celem jest pogłębienie wiedzy, porównanie szczegółów lub dokonanie transakcji.</p>
 
             <p>Oznacza to, że ruch pochodzący z odnośników w AI Overviews staje się bardziej wartościowy. Użytkownicy ci są lepiej przygotowani, bardziej zaangażowani i, co kluczowe z perspektywy biznesowej, bardziej skłonni do konwersji. To prowadzi nas do fundamentalnej zmiany w mierzeniu sukcesu. Spadek ogólnej liczby sesji na stronie może iść w parze ze wzrostem jakości generowanych leadów i współczynnika konwersji. Narracja strategiczna przesuwa się z metryk ilościowych (liczba kliknięć) na jakościowe (wartość konwersji, ROI), które realnie przekładają się na wyniki biznesowe. Nowa era wyszukiwania nagradza marki, które potrafią budować autorytet i dostarczać wartość jeszcze zanim użytkownik kliknie w link, przyciągając tym samym najbardziej zdecydowanych klientów.</p>
           </ExpandableSection>
@@ -394,9 +393,9 @@ const Index = () => {
 
         {/* Part II */}
         <ExpandableSection id="part2" title="Część II: Dekodowanie rewolucji: przewodnik lidera po nowym ekosystemie AI" level={1}>
-          <p>Ta część wyjaśnia „co". Demistyfikuje technologię w kategoriach biznesowych i mapuje nowy krajobraz konkurencyjny, dostarczając liderom wiedzy niezbędnej do podejmowania strategicznych decyzji.</p>
+          <p>Ta część wyjaśnia "co". Demistyfikuje technologię w kategoriach biznesowych i mapuje nowy krajobraz konkurencyjny, dostarczając liderom wiedzy niezbędnej do podejmowania strategicznych decyzji.</p>
           
-          <ExpandableSection id="chapter4" title="Rozdział 4: Wewnątrz „silnika odpowiedzi": jak myśli sztuczna inteligencja" level={2}>
+          <ExpandableSection id="chapter4" title="Rozdział 4: Wewnątrz silnika odpowiedzi: jak myśli sztuczna inteligencja" level={2}>
             <p>Aby wygrać w nowej erze, należy zrozumieć jej fundamentalne zasady. Oznacza to zrozumienie mechanizmów, za pomocą których modele AI przetwarzają informacje, aby formułować inteligentne i trafne odpowiedzi. U podstaw tej ewolucji leżą trzy kluczowe technologie, które należy postrzegać nie jako techniczne detale, lecz jako nowe reguły gry.</p>
 
             <ol className="list-decimal list-inside space-y-4">
