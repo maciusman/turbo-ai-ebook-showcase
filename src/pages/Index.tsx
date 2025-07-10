@@ -333,11 +333,11 @@ return (
         </header>
 
         {/* Introduction */}
-        <section id="introduction" ref={addElement} className={cn("mb-20 transition-opacity duration-700", visibleElements.has('introduction') ? 'opacity-100' : 'opacity-0')}>
-          <Card className="p-8 md:p-12 bg-card/50 shadow-lg hover:shadow-xl transition-shadow duration-300 border-border/50">
-            <h2 className="text-4xl font-bold mb-6 text-primary flex items-center"><BookOpen className="h-8 w-8 mr-4 text-accent"/>Wprowadzenie</h2>
-            <div className="prose prose-xl max-w-none text-foreground/90 leading-relaxed space-y-4">
-              <p>
+        <section id="introduction" className="mb-12">
+          <Card className="p-8 bg-gradient-to-r from-primary/5 to-blue-500/5 border-primary/20">
+            <h2 className="text-2xl font-bold mb-6">Wprowadzenie</h2>
+            <div className="prose prose-lg max-w-none text-muted-foreground">
+              <p className="mb-4">
                 Jesteśmy świadkami jednej z najbardziej fundamentalnych transformacji w funkcjonowaniu internetu od dziesięcioleci. 
                 Era, w której sukces biznesowy w sieci definiowała obecność na liście dziesięciu niebieskich linków, bezpowrotnie ustępuje 
                 miejsca nowemu paradygmatowi.
