@@ -334,7 +334,7 @@ return (
 
         {/* Introduction */}
         <section id="introduction" className="mb-12">
-          <Card className="p-8 bg-gradient-to-r from-primary/5 to-blue-500/5 border-primary/20">
+          <Card className="p-8 bg-gradient-to-r from-primary/5 to-blue-500/5 border-primary/20 shadow-lg hover:shadow-xl transition-shadow duration-300">
             <h2 className="text-2xl font-bold mb-6">Wprowadzenie</h2>
             <div className="prose prose-lg max-w-none text-muted-foreground">
               <p className="mb-4">
@@ -674,7 +674,7 @@ return (
                 <div className="flex items-start space-x-3">
                   <Badge variant="outline" className="mt-1">3</Badge>
                   <div>
-                    <h4 className="font-semibold mb-2">Zidentyfikuj swój „klejnot koronny"</h4>
+                    <h4 className="font-semibold mb-2">Zidentyfikuj swój „klejnot koronny”</h4>
                     <p className="text-sm text-muted-foreground">Wskaż jeden, najbardziej kompleksowy i ekspercki zasób treści, jaki posiada Twoja firma (np. flagowy poradnik, szczegółowe badanie, kluczowy artykuł filarowy). Wyznacz go jako projekt pilotażowy do pełnej optymalizacji pod kątem GEO. To pozwoli przetestować procesy na mniejszą skalę.</p>
                   </div>
                 </div>
