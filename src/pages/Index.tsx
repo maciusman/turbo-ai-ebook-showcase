@@ -594,14 +594,14 @@ return (
             <p>Aby jednak w pełni zademonstrować znaczenie tych strategii dla polskiego rynku, kluczowe jest przyjrzenie się lokalnym przykładom sukcesu.</p>
 
             <div className="space-y-6">
-              <Card className="p-6">
+              <Card className="p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <h4 className="text-lg font-semibold mb-4 text-primary">Studium przypadku e-commerce: zwycięstwo w konwersji i widoczności</h4>
                 <div className="space-y-3">
                   <div>
                     <strong>Wyzwanie:</strong> Polski sklep internetowy z branży części samochodowych borykał się z niską konwersją i stagnacją ruchu organicznego, mimo szerokiego asortymentu.
                   </div>
                   <div>
-                    <strong>Wdrożone rozwiązania:</strong> Zastosowano kompleksową strategię opartą na AI. Wdrożono systemy, które automatycznie rozbudowywały opisy produktów o dane techniczne i wskazówki montażowe, wykorzystując przetwarzanie języka naturalnego (NLP). Algorytmy rozpoznawania obrazu analizowały zdjęcia produktów, wzbogacając opisy i tagi alt. AI automatycznie dobierało słowa kluczowe i generowało unikalne meta tagi, jednocześnie weryfikując duplikację treści. Stworzono również inteligentny system kategoryzacji i rekomendacji produktów.
+                    <strong>Wdrożone rozwiązania:</strong> Zastosowano kompleksową strategię opartą na AI. Wdrożono systemy, które automatycznie rozbudowywały opisy produktów o dane techniczne i wskazówki monta��owe, wykorzystując przetwarzanie języka naturalnego (NLP). Algorytmy rozpoznawania obrazu analizowały zdjęcia produktów, wzbogacając opisy i tagi alt. AI automatycznie dobierało słowa kluczowe i generowało unikalne meta tagi, jednocześnie weryfikując duplikację treści. Stworzono również inteligentny system kategoryzacji i rekomendacji produktów.
                   </div>
                   <div className="bg-green-50 p-4 rounded-lg">
                     <strong>Rezultaty:</strong> Wdrożenie tych działań przyniosło spektakularne rezultaty biznesowe: <strong>wzrost ruchu organicznego o 62%</strong>, <strong>wzrost ogólnego współczynnika konwersji o 35%</strong> oraz <strong>redukcję współczynnika porzuconych koszyków o 41%</strong>. Ten przykład dobitnie pokazuje, że strategiczne wykorzystanie AI w e-commerce bezpośrednio przekłada się na wzrost przychodów.
@@ -609,7 +609,7 @@ return (
                 </div>
               </Card>
 
-              <Card className="p-6">
+              <Card className="p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <h4 className="text-lg font-semibold mb-4 text-primary">Studium przypadku usługi niszowe: budowanie ruchu od zera</h4>
                 <div className="space-y-3">
                   <div>
