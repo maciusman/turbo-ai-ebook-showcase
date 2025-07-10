@@ -333,11 +333,11 @@ return (
         </header>
 
         {/* Introduction */}
-        <section id="introduction" ref={addElement} className={cn("mb-20 transition-opacity duration-700", visibleElements.has('introduction') ? 'opacity-100' : 'opacity-0')}>
-          <Card className="p-8 md:p-12 bg-card/50 shadow-xl hover:shadow-2xl transition-shadow duration-300 border-border/50">
-            <h2 className="text-4xl font-bold mb-6 text-primary flex items-center"><BookOpen className="h-8 w-8 mr-4 text-accent"/>Wprowadzenie</h2>
-            <div className="prose prose-xl max-w-none text-foreground/90 leading-relaxed space-y-4">
-              <p>
+        <section id="introduction" className="mb-12">
+          <Card className="p-8 bg-gradient-to-r from-primary/5 to-blue-500/5 border-primary/20">
+            <h2 className="text-2xl font-bold mb-6">Wprowadzenie</h2>
+            <div className="prose prose-lg max-w-none text-muted-foreground">
+              <p className="mb-4">
                 Jesteśmy świadkami jednej z najbardziej fundamentalnych transformacji w funkcjonowaniu internetu od dziesięcioleci. 
                 Era, w której sukces biznesowy w sieci definiowała obecność na liście dziesięciu niebieskich linków, bezpowrotnie ustępuje 
                 miejsca nowemu paradygmatowi.
@@ -593,24 +593,33 @@ return (
 
             <p>Aby jednak w pełni zademonstrować znaczenie tych strategii dla polskiego rynku, kluczowe jest przyjrzenie się lokalnym przykładom sukcesu.</p>
 
-            <div className="space-y-8 mt-6">
-              <Card className="p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 border-border/50">
-                <h4 className="text-xl font-bold mb-4 text-primary flex items-center"><Award className="h-6 w-6 mr-3 text-accent"/>Studium przypadku e-commerce: zwycięstwo w konwersji</h4>
+            <div className="space-y-6">
+              <Card className="p-6">
+                <h4 className="text-lg font-semibold mb-4 text-primary">Studium przypadku e-commerce: zwycięstwo w konwersji i widoczności</h4>
                 <div className="space-y-3">
-                  <div><strong>Wyzwanie:</strong> Polski sklep internetowy z branży części samochodowych borykał się z niską konwersją i stagnacją ruchu organicznego, mimo szerokiego asortymentu.</div>
-                  <div><strong>Wdrożone rozwiązania:</strong> Zastosowano kompleksową strategię opartą na AI. Wdrożono systemy, które automatycznie rozbudowywały opisy produktów o dane techniczne i wskazówki montażowe, wykorzystując NLP. Algorytmy rozpoznawania obrazu analizowały zdjęcia produktów, wzbogacając opisy. AI automatycznie dobierało słowa kluczowe i generowało unikalne meta tagi.</div>
-                  <div className="bg-primary/5 p-4 rounded-lg mt-4 border-l-4 border-primary">
-                    <strong>Rezultaty:</strong> Spektakularne wyniki biznesowe: <strong>wzrost ruchu organicznego o 62%</strong>, <strong>wzrost współczynnika konwersji o 35%</strong> oraz <strong>redukcja porzuconych koszyków o 41%</strong>. To pokazuje, że strategiczne wykorzystanie AI w e-commerce bezpośrednio przekłada się na wzrost przychodów.
+                  <div>
+                    <strong>Wyzwanie:</strong> Polski sklep internetowy z branży części samochodowych borykał się z niską konwersją i stagnacją ruchu organicznego, mimo szerokiego asortymentu.
+                  </div>
+                  <div>
+                    <strong>Wdrożone rozwiązania:</strong> Zastosowano kompleksową strategię opartą na AI. Wdrożono systemy, które automatycznie rozbudowywały opisy produktów o dane techniczne i wskazówki montażowe, wykorzystując przetwarzanie języka naturalnego (NLP). Algorytmy rozpoznawania obrazu analizowały zdjęcia produktów, wzbogacając opisy i tagi alt. AI automatycznie dobierało słowa kluczowe i generowało unikalne meta tagi, jednocześnie weryfikując duplikację treści. Stworzono również inteligentny system kategoryzacji i rekomendacji produktów.
+                  </div>
+                  <div className="bg-green-50 p-4 rounded-lg">
+                    <strong>Rezultaty:</strong> Wdrożenie tych działań przyniosło spektakularne rezultaty biznesowe: <strong>wzrost ruchu organicznego o 62%</strong>, <strong>wzrost ogólnego współczynnika konwersji o 35%</strong> oraz <strong>redukcję współczynnika porzuconych koszyków o 41%</strong>. Ten przykład dobitnie pokazuje, że strategiczne wykorzystanie AI w e-commerce bezpośrednio przekłada się na wzrost przychodów.
                   </div>
                 </div>
               </Card>
-              <Card className="p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 border-border/50">
-                <h4 className="text-xl font-bold mb-4 text-primary flex items-center"><TrendingUp className="h-6 w-6 mr-3 text-accent"/>Studium przypadku B2C: budowanie ruchu od zera</h4>
+
+              <Card className="p-6">
+                <h4 className="text-lg font-semibold mb-4 text-primary">Studium przypadku usługi niszowe: budowanie ruchu od zera</h4>
                 <div className="space-y-3">
-                  <div><strong>Wyzwanie:</strong> Polska agencja edukacyjna posiadała stronę, która nie generowała praktycznie żadnego ruchu ani zapytań z powodu braku optymalizacji.</div>
-                  <div><strong>Wdrożone rozwiązania:</strong> Wdrożono ustrukturyzowane podejście SEO/GEO. Przeprowadzono audyt techniczny, naprawiono błędy indeksacji i wdrożono prawidłową strukturę językową. Opracowano strategię contentową opartą na analizie słów kluczowych i intencji użytkowników.</div>
-                  <div className="bg-primary/5 p-4 rounded-lg mt-4 border-l-4 border-primary">
-                    <strong>Rezultaty:</strong> W ciągu zaledwie sześciu miesięcy <strong>ruch organiczny na stronie wzrósł dziewięciokrotnie</strong>, a klient osiągnął stabilną widoczność dla kluczowych zapytań. To dowodzi, że zasady GEO mają uniwersalne zastosowanie i przynoszą wymierne korzyści w każdej branży.
+                  <div>
+                    <strong>Wyzwanie:</strong> Polska agencja edukacyjna posiadała stronę internetową, która nie generowała praktycznie żadnego ruchu ani zapytań z powodu całkowitego braku optymalizacji.
+                  </div>
+                  <div>
+                    <strong>Wdrożone rozwiązania:</strong> Wdrożono ustrukturyzowane podejście SEO/GEO. Przeprowadzono audyt techniczny, naprawiono błędy indeksacji, wdrożono prawidłową strukturę językową i tagi hreflang. Opracowano strategię contentową opartą na analizie słów kluczowych i intencji użytkowników, tworząc treści odpowiadające na potrzeby studentów na różnych etapach procesu decyzyjnego.
+                  </div>
+                  <div className="bg-blue-50 p-4 rounded-lg">
+                    <strong>Rezultaty:</strong> W ciągu zaledwie sześciu miesięcy (od lipca 2024 do stycznia 2025) <strong>ruch organiczny na stronie wzrósł dziewięciokrotnie</strong>, a klient osiągnął stabilną widoczność dla kluczowych zapytań. To studium przypadku dowodzi, że zasady GEO mają uniwersalne zastosowanie i przynoszą wymierne korzyści nie tylko w wielkoskalowym e-commerce, ale również w niszowych branżach usługowych.
                   </div>
                 </div>
               </Card>

@@ -73,8 +73,6 @@
 
   body {
     @apply bg-background text-foreground font-sans;
-    background-color: #f8fafc;
-    background-image: radial-gradient(circle at 1px 1px, #e2e8f0 1px, transparent 0);
-    background-size: 2rem 2rem;
+    background-image: linear-gradient(to top, #f3f4f6, #e5e7eb);
   }
 }
