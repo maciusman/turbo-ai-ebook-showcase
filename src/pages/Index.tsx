@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, ChevronRight, Download, BarChart3, Target, Users, Zap, TrendingUp, Search, Brain, Globe, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -159,70 +160,92 @@ const Index = () => {
       switch (type) {
         case 'growth':
           return (
-            <div className="space-y-4">
-              <div className="flex items-center justify-between">
-                <span className="text-sm font-medium">Chatboty AI</span>
-                <Badge variant="secondary">+80%</Badge>
+            <div className="space-y-6">
+              <div className="flex items-center justify-between p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-blue-200">
+                <div className="flex items-center space-x-3">
+                  <div className="w-4 h-4 bg-blue-500 rounded"></div>
+                  <span className="font-medium text-gray-800">Chatboty AI</span>
+                </div>
+                <Badge variant="secondary" className="bg-blue-100 text-blue-800 font-semibold">+80%</Badge>
               </div>
-              <div className="w-full bg-secondary rounded-full h-3">
-                <div className="bg-primary h-3 rounded-full" style={{ width: '80%' }}></div>
+              <div className="w-full bg-gray-200 rounded-full h-4 mb-4">
+                <div className="bg-gradient-to-r from-blue-500 to-blue-600 h-4 rounded-full shadow-sm" style={{ width: '80%' }}></div>
               </div>
-              <div className="flex items-center justify-between">
-                <span className="text-sm font-medium">Tradycyjne wyszukiwarki</span>
-                <Badge variant="secondary">34x więcej wizyt</Badge>
+              
+              <div className="flex items-center justify-between p-4 bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg border border-green-200">
+                <div className="flex items-center space-x-3">
+                  <div className="w-4 h-4 bg-green-500 rounded"></div>
+                  <span className="font-medium text-gray-800">Tradycyjne wyszukiwarki</span>
+                </div>
+                <Badge variant="secondary" className="bg-green-100 text-green-800 font-semibold">34x więcej wizyt</Badge>
               </div>
-              <div className="w-full bg-secondary rounded-full h-3">
-                <div className="bg-blue-500 h-3 rounded-full w-full"></div>
+              <div className="w-full bg-gray-200 rounded-full h-4">
+                <div className="bg-gradient-to-r from-green-500 to-green-600 h-4 rounded-full shadow-sm w-full"></div>
               </div>
             </div>
           );
         case 'conversion':
           return (
-            <div className="grid grid-cols-2 gap-4">
-              <Card className="p-4 text-center">
-                <TrendingUp className="h-8 w-8 mx-auto mb-2 text-green-500" />
-                <div className="text-2xl font-bold">+35%</div>
-                <div className="text-sm text-muted-foreground">Współczynnik konwersji</div>
-              </Card>
-              <Card className="p-4 text-center">
-                <Users className="h-8 w-8 mx-auto mb-2 text-blue-500" />
-                <div className="text-2xl font-bold">+62%</div>
-                <div className="text-sm text-muted-foreground">Ruch organiczny</div>
-              </Card>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-gradient-to-br from-green-50 to-emerald-100 p-6 rounded-xl border border-green-200 text-center shadow-sm hover:shadow-md transition-shadow">
+                <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <TrendingUp className="h-6 w-6 text-white" />
+                </div>
+                <div className="text-3xl font-bold text-green-700 mb-2">+35%</div>
+                <div className="text-sm text-green-600 font-medium">Współczynnik konwersji</div>
+              </div>
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-100 p-6 rounded-xl border border-blue-200 text-center shadow-sm hover:shadow-md transition-shadow">
+                <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="h-6 w-6 text-white" />
+                </div>
+                <div className="text-3xl font-bold text-blue-700 mb-2">+62%</div>
+                <div className="text-sm text-blue-600 font-medium">Ruch organiczny</div>
+              </div>
             </div>
           );
         case 'platforms':
           return (
-            <div className="space-y-3">
-              <div className="flex items-center space-x-3 p-3 bg-secondary/50 rounded-lg">
-                <Search className="h-5 w-5 text-blue-500" />
-                <span className="font-medium">Google AI Overviews</span>
+            <div className="space-y-4">
+              <div className="flex items-center space-x-4 p-4 bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg border border-blue-200 hover:shadow-md transition-shadow">
+                <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center">
+                  <Search className="h-5 w-5 text-white" />
+                </div>
+                <span className="font-semibold text-blue-800">Google AI Overviews</span>
               </div>
-              <div className="flex items-center space-x-3 p-3 bg-secondary/50 rounded-lg">
-                <Brain className="h-5 w-5 text-green-500" />
-                <span className="font-medium">ChatGPT Search</span>
+              <div className="flex items-center space-x-4 p-4 bg-gradient-to-r from-green-50 to-green-100 rounded-lg border border-green-200 hover:shadow-md transition-shadow">
+                <div className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
+                  <Brain className="h-5 w-5 text-white" />
+                </div>
+                <span className="font-semibold text-green-800">ChatGPT Search</span>
               </div>
-              <div className="flex items-center space-x-3 p-3 bg-secondary/50 rounded-lg">
-                <Globe className="h-5 w-5 text-purple-500" />
-                <span className="font-medium">Perplexity AI</span>
+              <div className="flex items-center space-x-4 p-4 bg-gradient-to-r from-purple-50 to-purple-100 rounded-lg border border-purple-200 hover:shadow-md transition-shadow">
+                <div className="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center">
+                  <Globe className="h-5 w-5 text-white" />
+                </div>
+                <span className="font-semibold text-purple-800">Perplexity AI</span>
               </div>
             </div>
           );
         default:
           return (
-            <div className="flex items-center justify-center h-32 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg">
-              <BarChart3 className="h-12 w-12 text-primary" />
+            <div className="flex items-center justify-center h-40 bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 rounded-xl border border-primary/20">
+              <div className="text-center">
+                <BarChart3 className="h-16 w-16 text-primary mx-auto mb-4" />
+                <p className="text-primary font-medium">Interaktywna wizualizacja</p>
+              </div>
             </div>
           );
       }
     };
 
     return (
-      <Card className="my-6">
-        <CardHeader>
-          <CardTitle className="flex items-center space-x-2">
-            <Zap className="h-5 w-5 text-primary" />
-            <span>{title}</span>
+      <Card className="my-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border-0 bg-gradient-to-br from-white to-gray-50">
+        <CardHeader className="pb-4">
+          <CardTitle className="flex items-center space-x-3 text-lg font-bold">
+            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+              <Zap className="h-4 w-4 text-primary-foreground" />
+            </div>
+            <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">{title}</span>
           </CardTitle>
         </CardHeader>
         <CardContent>
@@ -241,18 +264,23 @@ const Index = () => {
     const isExpanded = expandedSections[id];
     const HeaderTag = level === 1 ? 'h2' : level === 2 ? 'h3' : 'h4';
     const textSize = level === 1 ? 'text-2xl' : level === 2 ? 'text-xl' : 'text-lg';
+    const marginBottom = level === 1 ? 'mb-6' : 'mb-4';
     
     return (
-      <section id={id} className="mb-8">
-        <HeaderTag 
-          className={`${textSize} font-bold mb-4 flex items-center cursor-pointer hover:text-primary transition-colors`}
-          onClick={() => toggleSection(id)}
-        >
-          {isExpanded ? <ChevronDown className="h-5 w-5 mr-2" /> : <ChevronRight className="h-5 w-5 mr-2" />}
-          {title}
-        </HeaderTag>
+      <section id={id} className="mb-12">
+        <div className={`${level === 1 ? 'bg-gradient-to-r from-primary/5 to-blue-500/5 border border-primary/10 rounded-xl p-6 mb-6' : ''}`}>
+          <HeaderTag 
+            className={`${textSize} font-bold ${marginBottom} flex items-center cursor-pointer hover:text-primary transition-colors group`}
+            onClick={() => toggleSection(id)}
+          >
+            <div className="mr-3 p-1 rounded-md group-hover:bg-primary/10 transition-colors">
+              {isExpanded ? <ChevronDown className="h-5 w-5" /> : <ChevronRight className="h-5 w-5" />}
+            </div>
+            <span className={level === 1 ? 'bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent' : ''}>{title}</span>
+          </HeaderTag>
+        </div>
         {isExpanded && (
-          <div className="ml-7 space-y-4 text-muted-foreground leading-relaxed">
+          <div className="ml-8 space-y-6 text-muted-foreground leading-relaxed animate-fade-in">
             {children}
           </div>
         )}
@@ -264,26 +292,26 @@ const Index = () => {
     const [isChecked, setIsChecked] = useState(false);
 
     return (
-      <Card className="mb-4">
+      <Card className="mb-6 shadow-md hover:shadow-lg transition-shadow duration-300 border-0 bg-white">
         <CardHeader 
-          className="cursor-pointer hover:bg-secondary/50 transition-colors"
+          className="cursor-pointer hover:bg-secondary/30 transition-colors rounded-t-lg"
           onClick={() => setIsChecked(!isChecked)}
         >
-          <CardTitle className="flex items-center space-x-3">
-            <div className={`w-6 h-6 rounded border-2 flex items-center justify-center transition-colors ${
-              isChecked ? 'bg-primary border-primary' : 'border-muted-foreground'
+          <CardTitle className="flex items-center space-x-4">
+            <div className={`w-7 h-7 rounded-lg border-2 flex items-center justify-center transition-all duration-300 ${
+              isChecked ? 'bg-primary border-primary' : 'border-muted-foreground hover:border-primary'
             }`}>
               {isChecked && <CheckCircle className="h-4 w-4 text-primary-foreground" />}
             </div>
-            <span className={isChecked ? 'line-through text-muted-foreground' : ''}>{area}</span>
+            <span className={`transition-all duration-300 ${isChecked ? 'line-through text-muted-foreground' : 'text-foreground'}`}>{area}</span>
           </CardTitle>
         </CardHeader>
-        <CardContent>
-          <ul className="space-y-2">
+        <CardContent className="pt-0">
+          <ul className="space-y-3">
             {questions.map((question, index) => (
-              <li key={index} className="flex items-start space-x-2">
-                <span className="text-primary font-medium">•</span>
-                <span className="text-sm">{question}</span>
+              <li key={index} className="flex items-start space-x-3">
+                <span className="text-primary font-bold text-lg leading-none mt-1">•</span>
+                <span className="text-sm text-muted-foreground leading-relaxed">{question}</span>
               </li>
             ))}
           </ul>
@@ -292,22 +320,22 @@ const Index = () => {
     );
   };
 
-return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-secondary/10 to-background">
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-background via-secondary/5 to-accent/5">
       {/* Floating Table of Contents */}
-      <div className="fixed left-4 top-1/2 transform -translate-y-1/2 w-64 bg-card border rounded-lg shadow-lg p-4 z-40 max-h-96 overflow-y-auto hidden lg:block">
-        <h3 className="font-semibold mb-3 text-sm uppercase tracking-wide">Spis treści</h3>
+      <div className="fixed left-6 top-1/2 transform -translate-y-1/2 w-72 bg-card/95 backdrop-blur-sm border border-border/50 rounded-xl shadow-2xl p-6 z-40 max-h-[80vh] overflow-y-auto hidden lg:block">
+        <h3 className="font-bold mb-4 text-sm uppercase tracking-wider text-primary">Spis treści</h3>
         <nav className="space-y-1">
           {tableOfContents.map((item) => (
             <button
               key={item.id}
               onClick={() => scrollToSection(item.id)}
-              className={`w-full text-left text-xs p-2 rounded transition-colors ${
-                item.level === 1 ? 'font-semibold' : 'font-normal pl-4'
+              className={`w-full text-left text-xs p-3 rounded-lg transition-all duration-300 ${
+                item.level === 1 ? 'font-semibold' : 'font-normal pl-6'
               } ${
                 activeSection === item.id 
-                  ? 'bg-primary text-primary-foreground' 
-                  : 'hover:bg-secondary'
+                  ? 'bg-primary text-primary-foreground shadow-sm' 
+                  : 'hover:bg-secondary/50 text-muted-foreground hover:text-foreground'
               }`}
             >
               {item.title}
@@ -317,32 +345,35 @@ return (
       </div>
 
       {/* Main Content */}
-      <div className="lg:ml-72 p-6 max-w-4xl mx-auto">
+      <div className="lg:ml-80 p-8 max-w-5xl mx-auto">
         {/* Header */}
-        <header className="text-center mb-12 pt-8">
-          <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent mb-4">
-            Rewolucja AI Search
-          </h1>
-          <p className="text-xl text-muted-foreground mb-8">
-            Przewodnik dla polskich firm po optymalizacji pod sztuczną inteligencję
-          </p>
-          <Button onClick={generatePDF} className="mb-8">
-            <Download className="h-4 w-4 mr-2" />
+        <header className="text-center mb-16 pt-12">
+          <div className="mb-8">
+            <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary via-blue-600 to-purple-600 bg-clip-text text-transparent mb-6 leading-tight">
+              Rewolucja AI Search
+            </h1>
+            <div className="w-24 h-1 bg-gradient-to-r from-primary to-blue-600 mx-auto mb-6"></div>
+            <p className="text-xl md:text-2xl text-muted-foreground mb-12 leading-relaxed max-w-3xl mx-auto">
+              Przewodnik dla polskich firm po optymalizacji pod sztuczną inteligencję
+            </p>
+          </div>
+          <Button onClick={generatePDF} size="lg" className="shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <Download className="h-5 w-5 mr-2" />
             Pobierz PDF
           </Button>
         </header>
 
         {/* Introduction */}
-        <section id="introduction" className="mb-12">
-          <Card className="p-8 bg-gradient-to-r from-primary/5 to-blue-500/5 border-primary/20 shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <h2 className="text-2xl font-bold mb-6">Wprowadzenie</h2>
-            <div className="prose prose-lg max-w-none text-muted-foreground">
-              <p className="mb-4">
+        <section id="introduction" className="mb-16">
+          <Card className="p-10 bg-gradient-to-br from-primary/5 via-blue-500/5 to-purple-500/5 border border-primary/20 shadow-xl hover:shadow-2xl transition-shadow duration-500">
+            <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Wprowadzenie</h2>
+            <div className="prose prose-lg max-w-none text-muted-foreground space-y-6">
+              <p className="text-lg leading-relaxed">
                 Jesteśmy świadkami jednej z najbardziej fundamentalnych transformacji w funkcjonowaniu internetu od dziesięcioleci. 
                 Era, w której sukces biznesowy w sieci definiowała obecność na liście dziesięciu niebieskich linków, bezpowrotnie ustępuje 
                 miejsca nowemu paradygmatowi.
               </p>
-              <p>
+              <p className="text-lg leading-relaxed">
                 Ten przewodnik to mapa drogowa dla polskich firm, które chcą nie tylko przetrwać, ale prosperować w nowej erze 
                 wyszukiwania napędzanego sztuczną inteligencją.
               </p>
@@ -352,7 +383,7 @@ return (
 
         {/* Part I */}
         <ExpandableSection id="part1" title="Część I: Nieunikniona zmiana: dlaczego dotychczasowe zasady przestały obowiązywać" level={1}>
-          <p>Ta część ustanawia fundamentalne "dlaczego". Tworzy poczucie pilności, wykazując, że rewolucja w wyszukiwaniu opartym na sztucznej inteligencji nie jest odległym trendem, lecz obecną rzeczywistością, która bezpośrednio wpływa na polski rynek.</p>
+          <p className="text-lg leading-relaxed">Ta część ustanawia fundamentalne „dlaczego". Tworzy poczucie pilności, wykazując, że rewolucja w wyszukiwaniu opartym na sztucznej inteligencji nie jest odległym trendem, lecz obecną rzeczywistością, która bezpośrednio wpływa na polski rynek.</p>
           
           <ExpandableSection id="chapter1" title="Rozdział 1: Koniec wyszukiwania, początek ery odpowiedzi – i nowego wzrostu" level={2}>
             <p>Jesteśmy świadkami jednej z najbardziej fundamentalnych transformacji w funkcjonowaniu internetu od dziesięcioleci. Era, w której sukces biznesowy w sieci definiowała obecność na liście dziesięciu niebieskich linków, bezpowrotnie ustępuje miejsca nowemu paradygmatowi. Wyszukiwarka, jaką znaliśmy, ewoluuje w inteligentny "silnik odpowiedzi" (ang. <em>answer engine</em>), napędzany przez generatywną sztuczną inteligencję. Użytkownicy – a więc i klienci – coraz rzadziej poszukują linków. Oczekują natychmiastowych, skondensowanych odpowiedzi, generowanych w czasie rzeczywistym, bezpośrednio na stronie wyników.</p>
@@ -782,9 +813,13 @@ return (
         </ExpandableSection>
 
         {/* Footer */}
-        <footer className="mt-16 pt-8 border-t text-center text-muted-foreground">
-          <p>© 2025 Przewodnik po rewolucji AI Search dla polskich firm</p>
-          <p className="text-sm mt-2">Ta prezentacja została stworzona w oparciu o najnowsze dane i trendy w branży wyszukiwania AI.</p>
+        <footer className="mt-20 pt-12 border-t border-border/50 text-center">
+          <div className="space-y-4">
+            <p className="text-muted-foreground font-medium">© 2025 Przewodnik po rewolucji AI Search dla polskich firm</p>
+            <p className="text-sm text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              Ta prezentacja została stworzona w oparciu o najnowsze dane i trendy w branży wyszukiwania AI.
+            </p>
+          </div>
         </footer>
       </div>
     </div>
